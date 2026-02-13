@@ -1,0 +1,9 @@
+.global {
+  --brand-primary: #1D4ED8;
+  --brand-secondary: #EAB308;
+  --brand-accent: #FBBF24;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
