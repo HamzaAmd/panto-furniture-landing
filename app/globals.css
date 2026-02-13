@@ -1,9 +1,17 @@
-.global {
-  --brand-primary: #1D4ED8;
-  --brand-secondary: #EAB308;
-  --brand-accent: #FBBF24;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --brand-color-primary: #1F2937;  /* Replace with your primary brand color */
+    --brand-color-secondary: #3B82F6; /* Replace with your secondary brand color */
+    --brand-color-accent: #FBBF24;    /* Replace with your accent color */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--brand-color-primary);
+    color: white;
+}
