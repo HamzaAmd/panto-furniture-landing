@@ -1,19 +1,15 @@
-// Main Home Page
+// Corrected imports
 import React from 'react';
-import Header from './components/Header';
-import ProductList from './components/ProductList';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
+import SomeComponent from '../components/SomeComponent';
 
-const HomePage = () => {
+// Page structure
+const Page = () => {
     return (
         <div>
-            <Header />
-            <ProductList />
-            <Testimonials />
-            <Footer />
+            <h1>Welcome to Panto Furniture</h1>
+            <SomeComponent />
         </div>
     );
 };
 
-export default HomePage;
+export default Page;
