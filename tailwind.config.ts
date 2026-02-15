@@ -1,22 +1,33 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
       colors: {
-        brand: {
+        primary: {
           orange: '#E58411',
         },
-        background: {
-          muted: '#F6F6F6', // example muted background color
+        dark: {
+          bg: '#2C3E50',
+        },
+        text: {
+          primary: '#1F2937',
+          secondary: '#6B7280',
+        },
+        bg: {
+          light: '#F5F5F5',
         },
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
-      boxShadow: {
-        custom: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      },
     },
   },
   plugins: [],
-};
+}
+export default config

@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@layer base {
+  :root {
+    --primary-orange: #E58411;
+    --dark-bg: #2C3E50;
+    --text-primary: #1F2937;
+    --text-secondary: #6B7280;
+    --bg-light: #F5F5F5;
+  }
 
-:root {
-    --brand-color-primary: #1F2937;  /* Replace with your primary brand color */
-    --brand-color-secondary: #3B82F6; /* Replace with your secondary brand color */
-    --brand-color-accent: #FBBF24;    /* Replace with your accent color */
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--brand-color-primary);
-    color: white;
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
 }
