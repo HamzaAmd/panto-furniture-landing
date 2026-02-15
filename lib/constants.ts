@@ -1,21 +1,22 @@
-// Color Palette and Configuration
+// Color Palette
 export const colors = {
-  primary: '#FF5733',
-  secondary: '#33FF57',
-  accent: '#3357FF',
-  background: '#F5F5F5',
-  text: '#333333',
-};
+  primary: {
+    orange: '#E58411',
+  },
+  dark: {
+    bg: '#2C3E50',
+  },
+  text: {
+    primary: '#1F2937',
+    secondary: '#6B7280',
+  },
+  bg: {
+    light: '#F5F5F5',
+  },
+  white: '#FFFFFF',
+}
 
-export const sizes = {
-  small: '8px',
-  medium: '16px',
-  large: '32px',
-};
+// Product categories
+export const productCategories = ['Chair', 'Beds', 'Sofa', 'Lamp'] as const
 
-export const spacing = {
-  none: '0px',
-  tight: '4px',
-  standard: '8px',
-  loose: '16px',
-};
+export type ProductCategory = typeof productCategories[number]
